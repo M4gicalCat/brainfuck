@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@types/node": "^18.11.3"
+  },
+  "scripts": {
+    "run": "tsc --outDir output *.ts && node output/main.js",
+    "bf_to_bf": "tsc --outDir output *.ts && node output/main.js input=main.bf output=out.txt && node output/main.js input=out.txt output=out.bf",
+    "txt_to_txt": "tsc --outDir output *.ts && node output/main.js input=main.txt output=out.bf && node output/main.js input=out.bf output=out.txt"
+  }
+}
