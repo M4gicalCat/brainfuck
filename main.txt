@@ -1,1 +1,1 @@
-bonjour
+echo toto > toto.fich
